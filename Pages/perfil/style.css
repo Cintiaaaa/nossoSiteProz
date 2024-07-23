@@ -1,0 +1,276 @@
+* {
+  padding: 0;
+  margin: 0;
+  
+}
+body {
+  background-color: #f4d6c5;
+}
+
+img#banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 300px;
+  margin-bottom: 100px;
+}
+
+header {
+  margin-bottom: 80px;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #CC313D;
+  height: 5em;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+
+#saudacao {
+  color: white;
+}
+
+
+.menu {
+  width: 13.6em;
+  position: absolute;
+  background-color: #CC313D;
+  top: 5em; 
+  left: 1em;
+  transition: max-height 0.3s ease;
+  overflow: hidden;
+  max-height: 0;
+}
+
+.menu.show {
+  max-height: 300px; /* Altura máxima do menu quando visível */
+  padding: 0;
+}
+
+.hamburger {
+  background-color: transparent;
+  border: none;
+  font-size: 2em;
+  cursor: pointer;
+  color: white;
+  margin-left: 1em;
+}
+
+.botao {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  margin-bottom: 0.5em;
+  width: 100%;
+  height: 2.5em;
+  color: white;
+  border: none;
+  cursor: pointer;
+  background-color: #CC313D;
+}
+
+#txbuscar {
+  background-color: #CC313D;
+  color: aliceblue;
+  margin-right: 200px;
+  font-size: large;
+  font-weight: bold;
+}
+
+#buscar {
+  width: 15em;
+  height: 2.5em;
+  border: none;
+  border-radius: 10px;
+}
+
+.perfil {
+  background-color: #CC313D;
+}
+
+#logo {
+  width: 4em;
+  height: 4em;
+  border-radius: 50%;
+ 
+  background-image: url("./img/logo.png");
+  background-size: 4em;
+  background-repeat: no-repeat;
+  background-position-x: center;
+}
+
+#perfil {
+  width: 5em;
+  height: 5em;
+  border-radius: 50%;
+  border: none;
+  background-image: url("./img/MAQUIA~1.JPG");
+  background-size: 9em;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  margin-right: 5em;
+  cursor: pointer;
+}
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  background-color: #CC313D;
+}
+
+.dropdown-child {
+  display: none;
+  min-width: 133px;
+  position: absolute;
+  z-index: 1;
+}
+
+.dropdown-child a {
+  color: rgb(255, 255, 255);
+  padding: 16px 16px;
+  text-decoration: none;
+  display: block;
+  background-color: #CC313D;
+}
+
+.dropdown.active .dropdown-child {
+  display: block;
+  margin-right: 6em;
+}
+
+/* Carrossel */
+
+.carrossel {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.carperfil {
+  text-align: center;
+  display: none;
+}
+
+.carperfil img {
+  width: 100%;
+  max-width: 550px;
+  height: auto;
+}
+
+.escolha {
+  font-size: 30px;
+  margin-bottom: 67px;
+}
+
+.botoes {
+  margin-top: 10px;
+}
+
+.btn-like,
+.btn-dislike {
+  padding: 0 20px;
+  margin: 0 20px;
+  cursor: pointer;
+  font-size: 30px;
+  border: none;
+  background-color: transparent;
+}
+
+
+#btn-anterior {
+  left: 2px;
+  border-radius: 10px 0 0 10px;
+}
+
+#btn-proximo {
+  right: 2px;
+  border-radius: 0 10px 10px 0;
+}
+
+.btn-navegar:hover {
+  background: linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.2));
+}
+
+.txperfil {
+  border-radius: 10px 10px 0 0;
+  color: aliceblue;
+  background-color: #CC313D;
+}
+
+/* Chat */
+
+.chat {
+  position: fixed;
+  bottom: 0;
+  right: 20px;
+  width: 300px;
+  background-color: white;
+  border: 1px solid #ccc;
+  display: none;
+  flex-direction: column;
+}
+
+.chat-header, .chat-footer {
+  padding: 10px;
+  background-color: #CC313D;
+  color: white;
+}
+
+.chat-body {
+  padding: 10px;
+  height: 200px;
+  overflow-y: auto;
+}
+
+.open-chat {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  background-color: #CC313D;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.close-chat {
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  margin-left: 225px;
+}
+
+#send-chat {
+  width: 3em;
+  height: 3em;
+  border-radius: 50%;
+  border: none;
+  background-image: url("./img/pngwing.com.png");
+  background-size: 3em;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  margin-bottom: 0;
+  margin-left: 1em;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+#chat-input {
+  margin-top:0;
+  margin-left: 10px;
+  height: 40px;
+  width: 192px;
+}
