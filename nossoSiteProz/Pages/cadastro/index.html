@@ -4,14 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
+    <link href="style.css" rel="stylesheet"/>
 </head>
 
 <body>
-    <h1>Cadastro</h1>
-    <h2>Preencha o formulário abaixo para realizar o seu cadastro.</h2>
-    <H2>Será rapidinho.</H2>
+    <nav>
+        <header>
+            <img src="/Users/maahdisousa/Desktop/nossoSiteProz/nossoSiteProz/Pages/cadastro/img/site proz.webp" id="logo" alt="logo">
+            <h1>Cadastro</h1>
+        </header>
+    </nav>
+    
+    <h2>Preencha o formulário abaixo para realizar o seu cadastro. Será rapidinho!</h2>
 
 <form action="Script_do_form" method="post">
+    <section>
 <fieldset>
     <legend>Dados Pessoais</legend>
     <table cellspacing="10">
@@ -227,14 +234,6 @@
                             <input type="text" name="Outros">
                         </td>
                     </tr>
-                    <tr>
-                        <td>
-                            <label for="atividades"> Atividades que gosta de fazer:</label>
-                        </td>
-                        <td align="lest">
-                            <input type="text" name="atividades">
-                        </td>
-                    </tr>
                 </tr>
             </tr>
         </table>
@@ -309,11 +308,19 @@
 <br>
 <br>
 <br>
+</section>
 
-<label for="info"> Ao enviar meu cadastro, declaro que li e compreendi o Aviso de Privacidade do Candidato do Quero Amor.</label>
-        <label for="termo"> Aviso de Privacidade do Candidato Quero Amor (inglês / português / espanhol). do Quero Amor(clic aqui).</label>
-<button>
-    <label for="enviar"> enviar</label>
+ <button>
+    <label for="enviar"> Enviar</label>
 </button>
+    <table cellspacing="10"> 
+    <tr> 
+        <td align="lest">
+            <input type="checkbox" name="declaracao">
+        </td>
+        <td>
+            <label for="Declaração"> Declaro que li e compreendi o Aviso de Privacidade de Cadastro do Quero Amor.</label>
+        </td>
 </body>
+<footer><p>&copy; 2024 Grupo 2 do Curso Proz. Todos os direitos reservados.</p></footer>
 </html>
