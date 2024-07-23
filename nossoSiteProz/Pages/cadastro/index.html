@@ -10,9 +10,9 @@
 <body>
     <nav>
         <header>
-            <img src="/Users/maahdisousa/Desktop/nossoSiteProz/nossoSiteProz/Pages/cadastro/img/site proz.webp" id="logo" alt="logo">
-            <h1>Cadastro</h1>
+            <img src="img/site proz.webp" id="logo" alt="logo"> 
         </header>
+        <h1>Cadastro</h1>
     </nav>
     
     <h2>Preencha o formulário abaixo para realizar o seu cadastro. Será rapidinho!</h2>
@@ -41,8 +41,8 @@
                 <label>Data de Nascimento: </label>
             </td>
                 <td align="left">
-                    <input type="text" name="dia" size="2" maxlength="2" value="dd"> 
-                    <input type="text" name="mes" size="2" maxlength="2" value="mm"> 
+                    <input type="text" name="dia" size="3" maxlength="3" value="dd"> 
+                    <input type="text" name="mes" size="3" maxlength="3" value="mm"> 
                     <input type="text" name="ano" size="4" maxlength="4" value="aaaa">
                  </td>
         </tr>
@@ -239,7 +239,7 @@
         </table>
     </fieldset>
     <fieldset>
-        <legend>Sobre você!</legend>
+        <legend>Sobre você</legend>
         <table cellspacing="10"> 
             <td>
                 <label for="biografia"> Uma breve biografia ou descrição sobre você:</label>
@@ -255,7 +255,7 @@
                 </td>
             </tr>
             <td>
-                <input type="image" name="foto">
+                <a href="caminho/para/sua/imagem.jpg" download="nome_da_imagem.jpg">Baixar Imagem</a>
             </td>
             <tr>
                 <td>
@@ -302,25 +302,15 @@
                 </td>
             </tr>
             </td>
+        </table>
     </fieldset>
-</table>
-</form>
-<br>
-<br>
-<br>
-</section>
 
- <button>
-    <label for="enviar"> Enviar</label>
-</button>
-    <table cellspacing="10"> 
-    <tr> 
-        <td align="lest">
-            <input type="checkbox" name="declaracao">
-        </td>
-        <td>
-            <label for="Declaração"> Declaro que li e compreendi o Aviso de Privacidade de Cadastro do Quero Amor.</label>
-        </td>
-</body>
+    <input type="checkbox" name="declaracao">
+    <label for="Declaração"> Declaro que li e compreendi o Aviso de Privacidade de Cadastro do Quero Amor.</label>
+
+        <button><label for="enviar"> Enviar</label></button>
+    </section>
+</form>
 <footer><p>&copy; 2024 Grupo 2 do Curso Proz. Todos os direitos reservados.</p></footer>
+</body>
 </html>
