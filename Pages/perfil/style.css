@@ -1,8 +1,8 @@
 * {
   padding: 0;
   margin: 0;
-  
 }
+
 body {
   background-color: #f4d6c5;
 }
@@ -32,10 +32,13 @@ nav {
   z-index: 1000;
 }
 
-#saudacao {
+nav #saudacao {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  word-break: break-all;
   color: white;
 }
-
 
 .menu {
   width: 13.6em;
@@ -49,7 +52,7 @@ nav {
 }
 
 .menu.show {
-  max-height: 300px; /* Altura máxima do menu quando visível */
+  max-height: 300px;
   padding: 0;
 }
 
@@ -91,15 +94,10 @@ nav {
   border-radius: 10px;
 }
 
-.perfil {
-  background-color: #CC313D;
-}
-
 #logo {
   width: 4em;
   height: 4em;
   border-radius: 50%;
- 
   background-image: url("./img/logo.png");
   background-size: 4em;
   background-repeat: no-repeat;
@@ -118,7 +116,6 @@ nav {
   margin-right: 5em;
   cursor: pointer;
 }
-
 
 .dropdown {
   position: relative;
@@ -175,6 +172,8 @@ nav {
 
 .botoes {
   margin-top: 10px;
+  display: flex;
+  justify-content: center;
 }
 
 .btn-like,
@@ -184,22 +183,7 @@ nav {
   cursor: pointer;
   font-size: 30px;
   border: none;
-  background-color: transparent;
-}
-
-
-#btn-anterior {
-  left: 2px;
-  border-radius: 10px 0 0 10px;
-}
-
-#btn-proximo {
-  right: 2px;
-  border-radius: 0 10px 10px 0;
-}
-
-.btn-navegar:hover {
-  background: linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.2));
+  background: none;
 }
 
 .txperfil {
@@ -222,6 +206,8 @@ nav {
 }
 
 .chat-header, .chat-footer {
+  display: flex ;
+  flex-wrap: wrap;
   padding: 10px;
   background-color: #CC313D;
   color: white;
@@ -250,27 +236,33 @@ nav {
   border: none;
   color: white;
   cursor: pointer;
-  margin-left: 225px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: #CC313D;
+ padding: 10px;
+ margin-top: 20px;
 }
 
 #send-chat {
-  width: 3em;
+  width: 2.5em;
   height: 3em;
-  border-radius: 50%;
+  margin-left: 1em;
+  margin-top: 0.4em;
   border: none;
   background-image: url("./img/pngwing.com.png");
-  background-size: 3em;
+  background-color: transparent;
+  background-size: 2em;
   background-repeat: no-repeat;
   background-position-x: center;
-  margin-bottom: 0;
-  margin-left: 1em;
-  background-color: transparent;
   cursor: pointer;
 }
 
 #chat-input {
-  margin-top:0;
-  margin-left: 10px;
-  height: 40px;
-  width: 192px;
+  height: 2.5em;
+  width: 13em;
+  border-radius: 10px;
+  border: none;
 }
