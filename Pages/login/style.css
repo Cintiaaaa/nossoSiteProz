@@ -60,6 +60,7 @@ form input {
     margin: 10px; 
 }
 
+
 #email {
     width: 200px;
     padding: 5px;
@@ -71,10 +72,13 @@ form input {
     font-size: 16px;
     background-color: transparent;
     margin: 10px;
+
 }
 
 #email:focus {
     outline: none;
+
+
 }
 
 #senha {
@@ -86,12 +90,15 @@ form input {
     border-bottom: 1px bold black;
     border-radius: 5px;
     font-size: 16px;
+
     background-color: transparent;
+
     margin: 10px;
 }
 
 #senha:focus {
     outline: none;
+
 }
 
 section button {
@@ -181,5 +188,3 @@ footer {
 }
 
  
-
-
