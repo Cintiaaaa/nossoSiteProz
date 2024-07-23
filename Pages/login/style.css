@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#email {
+    width: 200px;
+    padding: 5px;
+    border-top: none;
+    border-left: none; 
+    border-right: none;
+    border-bottom: 1px bold black;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color:transparent;
+    margin: 10px;
+
+}
+
+#email:focus {
+    outline: none;
+   
+}
+
+#senha {
+    width: 200px;
+    padding: 5px;
+    border-top: none;
+    border-left: none; 
+    border-right: none;
+    border-bottom: 1px bold black;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color:transparent;
+    margin: 10px;
+}
+
+#senha:focus {
+    outline: none;
+}
