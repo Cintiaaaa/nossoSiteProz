@@ -5,14 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style.css" rel="stylesheet"/>
     <title>Sobre nós</title>
+    <script src="script.js" defer></script>
 </head>
 <body>
     <nav>
         <img src="./img/image.webp" id="logo" alt="logo">
-        <a href="">Home</a>
-        <a href="">Sobre Nós</a>
-        <a href="">Cadastro</a>
-    <button id="perfil"></button>
+        <a href="../perfil/index.html" class="links">Home</a>
+        <a href="../cadastro/index.html" class="links">Cadastro</a>
+        <div class="dropdown">
+          <button id="perfil"></button>
+            <div class="dropdown-child">
+              <a href="../perfil/index.html">Meu perfil</a>
+              <a href="">Chat</a>
+              <a href="">Configurações</a>
+              <a href="../login/index.html">Logout</a>
+            </div>
+          </div>
     </nav>
     <h1 id="objetivo">Qual o objetivo deste site?</h1>
   <section>

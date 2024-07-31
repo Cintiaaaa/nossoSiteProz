@@ -1,29 +1,24 @@
 * {
-    margin:0;
+    margin: 0;
     padding: 0;
-    
 }
-body{
+
+body {
     background-color: rgba(244, 223, 197, 0.67);
 }
+
 nav {
     background-color: rgba(204, 49, 61, 1);
     display: flex;
     justify-content: space-between;
-    
-    
-
-    
 }
 
 #logo {
-    width: 3.5em;
-    height: 3.5em;
-    margin-left: 5px;
+    width: 4em;
+    height: 4em;
+    margin-left: 20px;
     margin-top: 3px;
     background-color: transparent;
-    
-    
 }
 
 button {
@@ -31,11 +26,9 @@ button {
     width: 4em;
     height: 4em;
     margin-right: 4px;
-    border-color:transparent;
-    margin:4px;
+    border-color: transparent;
+    margin: 4px;
     background-color: rgba(244, 223, 197, 0.67);
-
-
 }
 
 a {
@@ -49,37 +42,30 @@ a {
     transition: background-color 0.10s;
 }
 
-a:hover{
-    background-color:rgba(244, 223, 197, 0.67) ;
-    color:rgba(204, 49, 61, 1);
+.links:hover {
+    background-color: rgba(244, 223, 197, 0.67);
+    color: rgba(204, 49, 61, 1);
     border-radius: 8px;
     margin-top: 15px;
     margin-bottom: 15px;
-    
 }
 
-
-h1{
+h1 {
     margin-top: 20px;
     margin-left: 15px;
     font-weight: bold;
     margin-bottom: 15px;
-    
 }
 
-#objetivo{
+#objetivo {
     margin-top: 20px;
 }
 
 section {
-    
     display: flex;
     flex-wrap: wrap;
-    margin:5px;
+    margin: 5px;
     justify-content: space-between;
-    
-    
-    
 }
 
 section div {
@@ -87,10 +73,6 @@ section div {
     width: 300px;
     height: 200px;
     margin-inline-end: 170px;
-    
-    
-
-   
 }
 
 section p {
@@ -99,15 +81,10 @@ section p {
     width: 600px;
     margin: 10px;
     margin-top: 10px;
-    
-    
 }
-
 
 section img {
     margin-top: -50px;
-    
-    
 }
 
 .creators {
@@ -117,8 +94,8 @@ section img {
     display: block;
     margin: 0 auto;
     margin-top: 20px;
-
 }
+
 .creators:hover {
     animation: pulso 1s infinite;
 }
@@ -135,51 +112,85 @@ section img {
     }
 }
 
-
 .adms {
     font-size: 25px;
     margin-top: 5px;
-    
-
 }
+
 .adms {
     animation-duration: 3s;
     animation-name: slidein;
-  }
-  
-  @keyframes slidein {
+}
+
+@keyframes slidein {
     from {
-      margin-left: 100%;
-      width: 300%;
+        margin-left: 100%;
+        width: 300%;
     }
-  
     to {
-      margin-left: 0%;
-      width: 100%;
+        margin-left: 0%;
+        width: 100%;
     }
-  }
+}
 
 #criadoras {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
     text-align: center;
-
+    margin-bottom: 50px;
 }
 
 footer {
-    margin:0;
+    margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
-    background-color:rgba(204, 49, 61, 1);
+    background-color: rgba(204, 49, 61, 1);
     font-size: 15px;
     height: 20px;
     color: antiquewhite;
     bottom: 0;
     position: fixed;
     width: 100%;
-    
-    
 }
 
+#perfil {
+    width: 5em;
+    height: 5em;
+    border-radius: 50%;
+    border: none;
+    background-image: url("./img/MAQUIA~1.JPG");
+    background-size: 9em;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    margin-right: 5em;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    background-color: #CC313D;
+}
+
+.dropdown-child {
+    display: none;
+    min-width: 133px;
+    position: absolute;
+    z-index: 1;
+}
+
+.dropdown-child a {
+    color: rgb(255, 255, 255);
+    padding: 16px 16px;
+    text-decoration: none;
+    display: block;
+    background-color: #CC313D;
+    border-radius: 0;
+}
+
+.dropdown:hover .dropdown-child {
+    display: block;
+    margin-right: 6em;
+}

@@ -199,7 +199,7 @@ nav #saudacao {
   bottom: 0;
   right: 20px;
   width: 300px;
-  background-color: white;
+  background-color:#f4d6c5;
   border: 1px solid #ccc;
   display: none;
   flex-direction: column;
@@ -232,6 +232,7 @@ nav #saudacao {
 }
 
 .close-chat {
+ margin-left: 230px;
   background-color: transparent;
   border: none;
   color: white;
@@ -261,6 +262,7 @@ footer {
 }
 
 #chat-input {
+  text-align: center;
   height: 2.5em;
   width: 13em;
   border-radius: 10px;

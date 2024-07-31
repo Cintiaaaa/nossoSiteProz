@@ -4,21 +4,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Login</title> 
+    <link href="style.css" rel="stylesheet"/>
 </head>
 <body>
-    <nav><a href="">Sobre o Site</a>&nbsp&nbsp<a href="">Sobre Nós</a>&nbsp&nbsp<a href="">Cadastro</a></nav>
- <h1>Login</h1>   
- <form>
-    <label for="email">Email</label>
-    <input type="text" id="email" email="email"></br></br>
-    <label for="senha">Senha</label>
-    <input type="password" id="senha" senha="senha"></br></br>
-    <label><input type="checkbox" id="remember-me" name="lembrar senha">Lembrar Senha</label></br></br>
-    <button>Entrar</button>&nbsp<button>Cadastrar</button>
-   
- </form>
-</br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
-<footer><p>&copy; 2024 Grupo 2 do Curso Proz. Todos os direitos reservados.</p></footer>
+    <header> 
+        <img src="./img/image (1).webp" id="logotipo" alt="logotipo">
+        <nav>
+            <a href="../sobre nós/index.html">Sobre Nós</a>
+            <a href="../cadastro/index.html">Cadastro</a>
+        </nav>
+       </header>
+    <section class="container">
+        <div class="form-container">
+            <h1>Login</h1>   
+            <form>
+              <div id="inputs">
+                <input type="email" id="email" email="email" placeholder="Usuário" autocomplete="email">
+                <input type="password" id="senha" senha="senha" placeholder="Senha" autocomplete="senha">
+            </div>
+                <div class="button-container">
+                    <a href="../perfil/index.html" id="buttonPerfil">Entrar</a>
+                    <a href="../cadastro/index.html" id="buttonCadastro">Cadastro</a>
+                </div>
+                <div id="checkbox">
+                    <input type="checkbox" id="remember-me" name="lembrar senha">
+                    <label for="remember-me">lembrar senha</label>
+                </div>
+                <div id="redes-sociais">
+                  <a href="https://pt-br.facebook.com/" id="facebook" ></a>
+                  <a href="https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fmail.google.com%2Fmail%2F%26ogbl%2F&emr=1&ifkv=AdF4I770Vfd3d1LGOhG5ZxzI-1lAqUeoPETJI21KKsiyG3w0fT22KvWb4uvu5OPT8WQnUK7wlF0qAw&ltmpl=default&ltmplcache=2&osid=1&passive=true&rm=false&scc=1&service=mail&ss=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S-450888740%3A1722462930317623&ddm=0" id="mensagens"></a>
+                </div>
+            </form>
+        </div>
+        <aside>
+            <img src="./img/image (1).webp" id="imgSite" alt="logotipo">
+        </aside>
+    </section>
+    <footer>
+        <p>&copy; 2024 Grupo 2 do Curso Proz. Todos os direitos reservados.</p>
+    </footer>
 </body>
 </html>
